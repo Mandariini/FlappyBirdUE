@@ -1,0 +1,608 @@
+{
+  "folders": [
+    {
+      "name": "FlappyBird",
+      "path": "."
+    },
+    {
+      "name": "UE5",
+      "path": "C:\\Games\\Epic Games\\UE_5.3"
+    }
+  ],
+  "settings": {
+    "typescript.tsc.autoDetect": "off",
+    "npm.autoDetect": "off"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.cpptools",
+      "ms-dotnettools.csharp"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "FlappyBird Win64 Debug Build",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Debug",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Debug Rebuild",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Debug",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "dependsOn": [
+          "FlappyBird Win64 Debug Clean"
+        ],
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Debug Clean",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Clean.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Debug",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 DebugGame Build",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "DebugGame",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 DebugGame Rebuild",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "DebugGame",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "dependsOn": [
+          "FlappyBird Win64 DebugGame Clean"
+        ],
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 DebugGame Clean",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Clean.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "DebugGame",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Development Build",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Development",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Development Rebuild",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Development",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "dependsOn": [
+          "FlappyBird Win64 Development Clean"
+        ],
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Development Clean",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Clean.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Development",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Test Build",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Test",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Test Rebuild",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Test",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "dependsOn": [
+          "FlappyBird Win64 Test Clean"
+        ],
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Test Clean",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Clean.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Test",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Shipping Build",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Shipping",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Shipping Rebuild",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Shipping",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "dependsOn": [
+          "FlappyBird Win64 Shipping Clean"
+        ],
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBird Win64 Shipping Clean",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Clean.bat",
+        "args": [
+          "FlappyBird",
+          "Win64",
+          "Shipping",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 Debug Build",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "Debug",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 Debug Rebuild",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "Debug",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "dependsOn": [
+          "FlappyBirdEditor Win64 Debug Clean"
+        ],
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 Debug Clean",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Clean.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "Debug",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 DebugGame Build",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "DebugGame",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 DebugGame Rebuild",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "DebugGame",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "dependsOn": [
+          "FlappyBirdEditor Win64 DebugGame Clean"
+        ],
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 DebugGame Clean",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Clean.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "DebugGame",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 Development Build",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "Development",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 Development Rebuild",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Build.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "Development",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "dependsOn": [
+          "FlappyBirdEditor Win64 Development Clean"
+        ],
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "label": "FlappyBirdEditor Win64 Development Clean",
+        "group": "build",
+        "command": "Engine\\Build\\BatchFiles\\Clean.bat",
+        "args": [
+          "FlappyBirdEditor",
+          "Win64",
+          "Development",
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-waitmutex"
+        ],
+        "problemMatcher": "$msCompile",
+        "type": "shell",
+        "options": {
+          "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      }
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch FlappyBird (Debug)",
+        "request": "launch",
+        "program": "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+        "preLaunchTask": "FlappyBird Win64 Debug Build",
+        "args": [],
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3",
+        "stopAtEntry": false,
+        "console": "internalConsole",
+        "type": "cppvsdbg",
+        "visualizerFile": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+        "sourceFileMap": {
+          "D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "name": "Launch FlappyBird (DebugGame)",
+        "request": "launch",
+        "program": "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+        "preLaunchTask": "FlappyBird Win64 DebugGame Build",
+        "args": [],
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3",
+        "stopAtEntry": false,
+        "console": "internalConsole",
+        "type": "cppvsdbg",
+        "visualizerFile": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+        "sourceFileMap": {
+          "D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "name": "Launch FlappyBird (Development)",
+        "request": "launch",
+        "program": "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\Binaries\\Win64\\UnrealGame.exe",
+        "preLaunchTask": "FlappyBird Win64 Development Build",
+        "args": [],
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3",
+        "stopAtEntry": false,
+        "console": "internalConsole",
+        "type": "cppvsdbg",
+        "visualizerFile": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+        "sourceFileMap": {
+          "D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "name": "Launch FlappyBird (Test)",
+        "request": "launch",
+        "program": "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+        "preLaunchTask": "FlappyBird Win64 Test Build",
+        "args": [],
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3",
+        "stopAtEntry": false,
+        "console": "internalConsole",
+        "type": "cppvsdbg",
+        "visualizerFile": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+        "sourceFileMap": {
+          "D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "name": "Launch FlappyBird (Shipping)",
+        "request": "launch",
+        "program": "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+        "preLaunchTask": "FlappyBird Win64 Shipping Build",
+        "args": [],
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3",
+        "stopAtEntry": false,
+        "console": "internalConsole",
+        "type": "cppvsdbg",
+        "visualizerFile": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+        "sourceFileMap": {
+          "D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "name": "Launch FlappyBirdEditor (Debug)",
+        "request": "launch",
+        "program": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+        "preLaunchTask": "FlappyBirdEditor Win64 Debug Build",
+        "args": [
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject"
+        ],
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3",
+        "stopAtEntry": false,
+        "console": "internalConsole",
+        "type": "cppvsdbg",
+        "visualizerFile": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+        "sourceFileMap": {
+          "D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "name": "Launch FlappyBirdEditor (DebugGame)",
+        "request": "launch",
+        "program": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+        "preLaunchTask": "FlappyBirdEditor Win64 DebugGame Build",
+        "args": [
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject"
+        ],
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3",
+        "stopAtEntry": false,
+        "console": "internalConsole",
+        "type": "cppvsdbg",
+        "visualizerFile": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+        "sourceFileMap": {
+          "D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "name": "Launch FlappyBirdEditor (Development)",
+        "request": "launch",
+        "program": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+        "preLaunchTask": "FlappyBirdEditor Win64 Development Build",
+        "args": [
+          "C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject"
+        ],
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3",
+        "stopAtEntry": false,
+        "console": "internalConsole",
+        "type": "cppvsdbg",
+        "visualizerFile": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+        "sourceFileMap": {
+          "D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.3"
+        }
+      },
+      {
+        "name": "Generate Project Files",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "UnrealBuildTool Win64 Development Build",
+        "program": "C:\\Games\\Epic Games\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+        "args": [
+          "-projectfiles",
+          "-vscode",
+          "-project=C:\\Users\\timo_\\Documents\\Unreal Projects\\FlappyBird\\FlappyBird.uproject",
+          "-game",
+          "-engine",
+          "-dotnet"
+        ],
+        "console": "internalConsole",
+        "stopAtEntry": false,
+        "cwd": "C:\\Games\\Epic Games\\UE_5.3"
+      }
+    ]
+  }
+}
